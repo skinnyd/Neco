@@ -20,7 +20,7 @@ $objSmarty->compile_dir = SMARTY_COMPIlE_DIR;
 $objSmarty->cache_dir = SMARTY_CACHE_PATH;
 
 // テンプレート変数の設定
-$objSmarty->assign('message', 'ひなたですぞ！！！！！');
+$objSmarty->assign('message', 'ひなにゃす♪');
 
 // テンプレート出力
 $objSmarty->display('smarty_test.tpl');
