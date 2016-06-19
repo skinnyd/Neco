@@ -4,7 +4,8 @@
 </head>
 <body>
 {$message}
-<br>
+<span>
 <img src="images/hinata.jpg">
+</span>
 </body>
 </html>
