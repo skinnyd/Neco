@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Smarty Test</title>
+<title>Index Page</title>
 </head>
 <body>
-{$message}
+SHO HEY HEY!!
 <span>
 <!-- <img src="images/hinata.jpg"> -->
 </span>
