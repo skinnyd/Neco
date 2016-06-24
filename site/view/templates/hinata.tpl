@@ -3,9 +3,9 @@
 <title>Index Page</title>
 </head>
 <body>
-Koharu<br>
+Hinata<br>
 <span>
-<img src="/test/view/images/koharu.jpg">
+<img src="/site/view/images/hinata.jpg">
 </span>
 </body>
 </html>

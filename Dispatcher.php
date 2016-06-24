@@ -2,7 +2,7 @@
 class Dispatcher {
     private $sysRoot;
     //URLの階層設定。どの階層からをパラメータとして解釈するか。
-    // /直下に置くなら0, /test/以下に置くなら1, /test/hoge/以下に置くなら2
+    // /直下に置くなら0, /site/以下に置くなら1, /tsitehoge/以下に置くなら2
     private $paramLevel=1;
 
     public function setSystemRoot($path) {
@@ -45,6 +45,7 @@ class Dispatcher {
         }
 
         // クラスインスタンス生成
+        error_log($className);
         $controllerInstance = new $className($url);
 
         // 2番目のパラメーターをアクションとして取得

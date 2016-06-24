@@ -1,5 +1,5 @@
 <?php
-require_once( 'test/model/KoharuModel.php' );
+require_once( 'site/model/KoharuModel.php' );
 require_once('Smarty.class.php');
 
 class KoharuController {
@@ -17,13 +17,12 @@ class KoharuController {
         // リクエスト
         //$this->request = new Request();
         //モデルをインスタンス化(コントローラと1:1のパターン)
-        $this->model = new KoharuModel();
         //ビューインスタンス化
         $this->view = new Smarty();
         //Smartyのディレクトリ設定(キャッシュやテンプレート置き場など)
-        $this->view->template_dir = "test/view/templates";
-        $this->view->compile_dir = "test/view/templates_c";
-        $this->view->cache_dir ="test/view/cache";
+        $this->view->template_dir = "site/view/templates";
+        $this->view->compile_dir = "site/view/templates_c";
+        $this->view->cache_dir ="site/view/cache";
         // debugging
         // $this->view->debugging = true;
         //Smartyテンプレートにセットするパス
@@ -33,6 +32,7 @@ class KoharuController {
     }
 
     public function showAction() {
+        $this->model = new Show();
         $this->view->display('koharu.tpl');
     }
 }
