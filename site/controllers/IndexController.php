@@ -1,5 +1,5 @@
 <?php
-require_once( 'test/model/IndexModel.php' );
+require_once( 'site/model/IndexModel.php' );
 require_once('Smarty.class.php');
 
 class IndexController {
@@ -21,9 +21,9 @@ class IndexController {
         //ビューインスタンス化
         $this->view = new Smarty();
         //Smartyのディレクトリ設定(キャッシュやテンプレート置き場など)
-        $this->view->template_dir = "test/view/templates";
-        $this->view->compile_dir = "test/view/templates_c";
-        $this->view->cache_dir ="test/view/cache";
+        $this->view->template_dir = "site/view/templates";
+        $this->view->compile_dir = "site/view/templates_c";
+        $this->view->cache_dir ="site/view/cache";
         // debugging
         // $this->view->debugging = true;
         //Smartyテンプレートにセットするパス
